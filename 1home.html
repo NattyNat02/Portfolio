@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <!-- this is my home page-->
+    <title>VS' Portfolio</title>
+    <style>
+        /* this rule is to set the navigation bar*/
+        ul
+        {
+            list-style:none;
+            margin:0;
+            padding:0;
+            overflow: hidden;
+            background-color: aliceblue;
+        }
+
+        /*This rule defines the elements to align to left*/
+        li
+        {
+            float:left;
+            border-right: 1px solid #bbb;
+        }
+
+        /*This rule is to set the border in the mavigation bar*/
+        li:last-child
+        {
+            border-right:none;
+        }
+
+        /*to display hover color as blue and text color appear as white*/
+        li a:hover
+        {
+            color: white;
+            background-color: #3a60a7;
+        }
+
+        /*aligning the header 1 to center and setting the color to aquamarine */
+        h1
+        {
+            text-align:center;
+            text-transform: uppercase;
+            color: #008CBA;
+        }
+
+        /*setting the style for paragraph*/
+        p
+        {
+            text-indent: 50px;
+            letter-spacing: 1px;
+            text-align: justify;
+        }
+
+        /*Sets text in navigation bar in blocks */
+        li a
+        {
+               display:block;
+               text-align: center;
+               padding: 14px 14px;
+               text-decoration: none;
+        }
+
+        /* */
+        a{
+            text-decoration: none;
+            color: #008CBA;
+        }
+
+        /* this rule is to set the style for table in the webpage*/
+        table, td, th {
+            border: 2px solid black;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td{
+            height: 50px;
+            vertical-align: bottom;
+        }
+
+        /*Sets the style for the search bar */
+        input[type=text]{
+            width:200px;
+            box-sizing: border-box;
+            border: 1px solid #008CBA;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('C:\Users\acese\OneDrive\Documents\GitHub\assignment_3-website-by-linking-all-your-web-pages-NattyNat02-main\download2.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding:12px 20px 12px 40px;
+            transition: width 0.4s ease-in-out;
+        }
+
+        /*Expands search bar to 100% when there's input*/
+        input[type=text]:focus{
+            width:100%;
+        }
+
+    </style>
+    
+
+  <body>
+        <!--Navigation Bar-->
+        <ul>
+            <li><a class ="active" href="C:\Users\acese\OneDrive\Documents\GitHub\assignment_3-website-by-linking-all-your-web-pages-NattyNat02-main\1home.html">Home</a></li><li><a class ="active" href="C:\Users\acese\OneDrive\Documents\GitHub\assignment_3-website-by-linking-all-your-web-pages-NattyNat02-main\2experience.html">Experience</a></li><li><a class ="active" href="C:\Users\acese\OneDrive\Documents\GitHub\assignment_3-website-by-linking-all-your-web-pages-NattyNat02-main\3involvement.html">Involvements</a></li><li><a class ="active" href="C:\Users\acese\OneDrive\Documents\GitHub\assignment_3-website-by-linking-all-your-web-pages-NattyNat02-main\4interest.html">Interests</a></li><li style="float:right"><a class ="active" href="C:\Users\acese\OneDrive\Documents\GitHub\assignment_3-website-by-linking-all-your-web-pages-NattyNat02-main\5contact.html">Contact Me</a></li>
+        </ul>
+
+        <!--Search Bar-->
+        <form>
+            <input style="float: right" type ="text" name="search" placeholder="Search....">
+        </form>
+
+        <!--Website Header-->
+        <div>
+            <h1>About Me</h1>
+            <p>This is a sample text to display on my webpage</p>
+        </div>
+
+        <!--Table-->
+        <table>
+            <tr>
+                <th>Semester</th>
+                <th>Course Title</th>
+                <th>Course Code</th>
+                <th>Grade</th>
+            </tr>
+
+            <tr>
+                <td>Fall 2019</td>
+                <td>Spirituality and Prayer</td>
+                <td>RELS1335</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>Fall 2019</td>
+                <td>Introduction to Philosophy</td>
+                <td>PHIL1381</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>Fall 2019</td>
+                <td>Principles of Accounting1</td>
+                <td>ACCT2311</td>
+                <td>A</td>
+            </tr>
+            
+            <tr>
+                <td>Fall 2019</td>
+                <td>Elementary Spanish 1</td>
+                <td>SPAN1311</td>
+                <td>A</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
