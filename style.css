@@ -1,0 +1,670 @@
+/*This sets the rules for the webpage's header*/
+div.header{
+text-align: center;
+background-color: lightpink;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Styling the header of my website*/
+h1.main
+{
+    text-align: center; 
+    text-transform: uppercase; 
+    color: #008CBA;
+    font-size: 5vw;
+    line-height: 1.6;
+    padding: 10px 0px 0px 0px;
+    margin: 35px 0px;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+}
+
+/*This rule sets up the rule for the profile picture in my website header*/
+.profilePicture
+{
+height:50%;
+width: 12%;
+border:3px solid #008CBA;
+float: left;
+border-radius:50%;
+margin: 8px 8px;
+display:inline;
+vertical-align:left;
+}
+
+
+/* this rule is to set the navigation bar*/
+ul.nav
+{
+    list-style:none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: lightpink;
+}
+
+/*This rule defines the elements to align to left*/
+li.nav
+{
+    float:left;
+    border-right: 1px solid #3a60a7;
+    border-top: 1px solid #3a60a7;
+}
+
+/*This rule stylizes "Contact Me" part in Nav Bar*/
+#contact
+{
+    float:right;
+    border-left: 1px solid #3a60a7;
+}
+
+/*This rule is to set the border in the mavigation bar*/
+li.nav:last-child
+{
+    border-right:none;
+}
+
+/*to display hover color as blue and text color appear as white*/
+li.nav a:hover
+{
+    color: white;
+    background-color: #3a60a7;
+}
+
+/*Sets text in navigation bar in blocks */
+li.nav a
+{
+        display:block;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+}
+
+/*Sets the color of the link*/
+a{
+    text-decoration: none;
+    color: #008CBA;
+}
+
+/*Sets the style for the search bar */
+input.search[type=text]{
+    box-sizing: border-box;
+    border: 1px solid #008CBA;
+    border-radius: 4px;
+    font-size: 1vw;
+    background-color: white;
+    margin: 4px 6px;
+}
+
+/*Sets style for the background in the search bar*/ 
+.search{
+    float: right;
+    background-image: url('download2.png');
+    width:15%;
+    background-position: 8px 8px;
+    background-size: 10%;
+    background-repeat: no-repeat;
+    transition: width 0.4s ease-in-out;
+    padding:10px 20px 10px 40px;
+}
+
+/*This is the rule for the website's background picture */
+body{
+    background-image: url('TechBackground.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*define the rule for section*/
+section::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+/*Setting the style for the footer */
+footer{
+    list-style:none;
+    width: 99%;
+    margin:0;
+    padding:5px 5px;
+    float: left;
+
+    color: aliceblue;
+    background-color: lightpink;
+    text-align: left;
+}
+
+/*Setting the style for the footer text*/
+.footerCenterText{
+    text-align: center;
+    font-size: 2.1vw;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+}
+
+/*Setting the style for the footer logos*/
+.footerLogo{
+    float: left;
+    height: 5%;
+    width: 5%;
+    border-radius: 25%;
+    margin: 0px 5px;
+}
+
+/*Setting the style for the footer logos when hovered over*/
+.footerLogo:hover{
+    height: 6%;
+    width: 6%;
+}
+
+/*Setting the style for the footer logos*/
+#EmailLogo{
+    float: right;
+    border-radius: 25%;
+}
+
+#TeleLogo{
+    float: right;
+    border-radius: 25%;
+}
+
+/*SETTING UP STYLE FOR THE HOME PAGE
+
+    /*Styling the header for Titles of the webpage*/
+    h1.pageTitle
+    {
+        text-align: center;
+        text-transform: uppercase; 
+        color: aliceblue;
+        font-size: 74px;
+        text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    }
+
+    h1.pageTitle:hover{
+      color: #008CBA;
+    }
+
+    /*This sets the style rules for the long article column on the left side of the webpage */
+    article.longColumn{
+        float:left;
+        width: 24%;
+        height: 75%;
+        padding: 2px 2px;
+        margin: 4px 2px;
+        background-color: #3a60a7;
+        text-align: center;
+    }
+
+    /*This sets up the style rules for the long article rows with descriptions about my other webpages*/
+    article.longRow{
+        float:right;
+        width: 55%;
+        height: 25%;
+        padding: 2px 2px;
+        margin: 2px 0px;
+        background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+
+        column-count:2;
+        column-rule-style: solid;
+        column-rule-width: 1px;
+        column-rule-color: #3a60a7;
+    }
+
+    /*This sets up the style rules for the short article rows with images and titles of my other webpages*/
+    article.shortRow{
+        text-align:center;
+        float:right;
+        width: 17%;
+        height: 25%;
+        padding: 2px 0px;
+        margin: 2px 2px;
+        background-color: rgb(103, 38, 136);
+
+        border-style: double;
+        border-color: lightpink;
+    }
+
+    /*This sets up the style for by bold tags in Education Background */
+    b.small{
+        font-size: 2vw;
+        text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    }    
+
+    /*This sets up the style for by UIW Title in Education Background section*/
+    b.large{
+        font-size: 2.5vw;
+        text-align: center;
+        color: white;
+        text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    }
+
+    /*Sets up the style for p in the My edcation section*/
+    p.education{
+        color: white;
+    }
+
+    /*setting header 2 to uppercase and setting the color */
+    .longColumnTitle
+    {
+        text-transform: uppercase;
+        color: rgb(122, 179, 230);
+        text-align:center;
+        font-size: 2vw;
+    }
+
+    /*Sets up style for intro text*/
+    #intro{
+      color: white;
+    }
+
+    /*Sets up style for intro text when hovered*/
+    #intro:hover{
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    
+    /*Sets style for h4*/
+    h4{
+        padding:2px 2px; 
+        float:left;
+        margin: 8px 30px;
+    }
+
+    /*setting the style for paragraph*/
+    p
+    {
+        font-size: 1.18vw;
+        text-indent: 50px;
+        letter-spacing: 1px;
+        text-align: justify;
+        padding:2px 2px;
+    }
+    
+    /*Sets style for the UIW Logo on the Home Page*/
+    .UIWlogo{
+        width:35%;
+        border-radius: 35%;
+    }
+
+    /*Sets style for when UIW Logo is Hovered over*/
+    .UIWlogo:hover{
+        width: 45%;
+        border-color: black;
+        border-style: dotted;
+    }
+
+    /*Sets style for GIF Titles*/
+    h2.GifTitles{
+        font-size: 1.3vw;
+        color: lightpink;
+    }
+
+    /*Sets style for GIF Titles when hovered*/
+    h2.GifTitles:hover{
+      border-bottom: double;
+      border-color: lightpink;
+      font-size: 1.6vw;
+    }
+
+    /*Sets style for GIFs on home page*/
+    .homeGifs{
+        height: 80%;
+        width: 80%;
+        margin: 8px 8px;
+    }
+
+    /*Sets style for text when hovered*/
+    .homeRowText{
+        color: black;
+    }
+
+    /*Sets style for text when hovered*/
+    .homeRowText:hover{
+      color:white;
+    }
+
+/*SETTING UP STYLE FOR THE EXPERIENCE PAGE*/
+    
+  /*Defining rules for frame */
+  .work{
+      text-align: center;
+      float: left;
+      width: 45%;
+      height: 250px;
+      background-color:rgb(122, 179, 230); 
+      color:rgb(99, 97, 97);
+      margin: 8px 6px;
+      padding:5px 5px;
+  }
+
+    /*Defining the rules for images in experience section */ 
+    img.job{
+      width: 25%;
+      margin: 30px 12px;
+  }
+
+  /*Setting the style for portion about my technical skills */
+  article.Skills{
+      list-style:none;
+      width: 45%;
+      margin: 8px 4px;
+      padding:5px 5px;
+      float: left;
+
+      background-color: #3a60a7;
+      text-align: left;
+  }
+
+    /*Defining rules for the card*/
+    .cardSkills{
+        background-color: white;
+        padding:20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /*Defining the rules for column*/
+    .cdivider{
+    column-count:3;
+    column-gap: 40px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: lightblue;
+    }
+
+    /*Defining the rules for teal titles*/
+    .tealTitle{
+      color: #008CBA;
+    }
+
+    .tealTitle:hover{
+      font-size: 3vw;
+    }
+        
+
+
+/*SETTING UP THE STYLE FOR THE INVOLVEMENTS PAGE
+
+    /*Sets up the style for frame*/
+    .softballFrame{
+        float:left;
+        width: 98%;
+        height: 80%;
+        padding: 2px 2px;
+        margin: 4px 2px;
+        background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+        line-height: 40px;
+        text-align:center;
+    }
+    
+    /*Sets up the style for the header in the softballFrame*/
+    .softballHeader{
+        font-size: 4vw; 
+        margin: 8px 8px; 
+        text-align: center;
+        color: rgb(20, 15, 82);
+    }
+
+    /*Sets up the style for softball images*/
+    .softballImages{
+        width: 24%; 
+        height: 10%;
+        float:right;
+        margin: 8px 8px;
+    }
+
+    /*Sets up the style for the softball video*/
+    .softballVideo{
+        float: left;
+        margin: 8px 8px;
+        width: 45%;
+    }
+
+    /* this rule is to set the style for table in the webpage*/
+    table, td, th {
+        border: 2px solid #008CBA;
+        color: rgb(20, 15, 82);
+        background-color: aliceblue;
+    }
+
+        table{
+            border-collapse: collapse;
+            width: 98%;
+            float:left;
+            margin: 8px 8px;
+        }
+
+        td{
+            height: 10%;
+            vertical-align: bottom;
+        }
+
+    /*Sets the style rule for school title */
+    article.schoolTitle{
+        float:left;
+        width:47%;
+        height:10%;
+        background-color: aliceblue;
+        margin: 8px 8px;
+        text-align: center;
+        color: #008CBA;
+    }
+
+    /*Sets the style rule for title of volunteer title*/
+    article.volunteerTitle{
+        float:right;
+        width: 47%;
+        height: 10%;
+        background-color: rgb(122, 179, 230);
+        margin: 8px 8px;
+        text-align: center;
+        color: rgb(20, 15, 82);
+    }
+
+    /*Sets the style rule for artitle of school org*/
+    article.schoolOrgs{
+        float:left;
+        width:23%;
+        height: 30%;
+        background-color: aliceblue;
+        margin: 6px 6px;
+        text-align: center;
+        color: #008CBA;
+    }
+
+    /*Sets the style rule for artitle of volunteer org*/
+    article.volunteerOrgs{
+        float:right;
+        width: 23%;
+        height: 30%;
+        background-color: rgb(122, 179, 230);
+        margin: 6px 6px;
+        text-align: center;
+        color: rgb(20, 15, 82);
+    }
+
+    /*Sets up style for bulletpoints*/
+    li.bullet{
+        border:none;
+        line-height: 25px;
+        color: #008CBA;
+        font-size: 1vw;
+    }
+
+    /*Sets up style for bulletpoints*/
+    li.bullet2{
+        border:none;
+        line-height: 25px;
+        color: rgb(20, 15, 82);
+        font-size: 1vw;
+    }   
+
+    /*sets font size for h1*/
+    h1.org{
+        font-size: 1.3vw;
+    }
+
+    /*Sets the style for the images for the orgs I'm involved in*/
+    img.involvements{
+        float:clear;
+        width: 80%;
+        height: 20%;
+    }
+
+    .duties{
+        color: #008CBA;
+    }
+
+/*SETTING UP THE STYLE FOR THE PROJECTS PAGE
+  /*Sets up the style for the frame*/
+    .projects{
+        width: 29%;
+        height: 100px;
+        background-color: aliceblue;
+        margin: 10px 8px;
+        padding: 50px 0px;
+        text-align:center;
+        float: left;
+    }
+  /*sets up the generic style for the buttons*/
+  /*idea from https://codepen.io/pirrera/pen/bqVeGx */
+    .projBtn{
+      padding: 8px 12px;
+      margin: auto;
+      border-radius: 25%;
+      width:50%;
+      height: 75%;
+
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+    }
+
+    /*sets up the button gradients according to button id*/
+      #calculator{
+        background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+      }
+      #hangman{
+        background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+      }
+      #keyboard{
+        background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+      }
+      #snakegame{
+        background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+      }
+      #tictactoe{
+        background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+      }
+      #drumkit{
+        background-image: linear-gradient(to right, #cb9eff 0%, #85e1fd 51%, #cb9eff 100%);
+      }
+  /*Has bottons gradient swap sides when mouse hovers over button*/
+    .projBtn:hover {
+      background-position: right center;
+    }
+    
+  /*sets up style for text within the buttons*/
+    .btnText{
+      color: aliceblue;
+      font-size: 1.5vw;
+      text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    }
+
+    
+
+/*SETTING UP THE STYLE FOR THE CONTACT ME PAGE*/
+
+  /*Sets up style for the frame*/
+    #frame{
+        width: 48%;
+        height: 60%;
+        background-color: #3a60a7;
+        margin: 8px 8px;
+        text-align:center;
+        float: left;
+    }
+
+  /*Sets up the style for article containing text entry*/
+    article.infoInput{
+        float:right;
+        width: 48%;
+        height: 90%;
+        padding: 2px 2px;
+        margin: 4px 2px;
+        background-color: aliceblue;
+        text-align: center;
+    }
+  /*Sets up style for input boxes on left side of the Entry Form*/
+    #leftInput{
+        float: left;
+        padding:12px 10px 12px 10px;
+        margin:12px 5px 12px 5px;
+        width:35%;
+    }
+
+  /*Sets up style for input boxes on left side of the Entry Form*/
+    #rightInput{
+        float: right;
+        padding:12px 10px 12px 10px;
+        margin:12px 5px 12px 5px;
+        width:35%;
+    }
+
+  /*Sets up style for the email input box on the Entry Form*/
+    #longInput{
+        float: left;
+        padding:12px 10px 12px 10px;
+        margin:12px 5px 12px 5px;
+        width:90%;
+    }
+  /*Sets up style for the comments input box on the Entry Form*/
+    #commentsInput{
+        float: left;
+        padding:12px 10px 12px 10px;
+        margin:12px 5px 12px 5px;
+        width:90%;
+        height:30%;
+    }
+
+    /*Sets up style for bold text*/
+    b{
+        font-size: 1.3vw;
+        margin: 40px 14px;
+    }
+
+    /*Sets up style for text in frame*/
+    .info{
+        font-size: 1.3vw;
+    } 
+
+    /*Sets up the style for text entry containers*/
+    input[type=submit]{
+        margin: 4px 0px;
+        text-align:center;
+        background-color: #008CBA;
+        color: aliceblue;
+        border-color: solid #3a60a7;
+        float: left;
+        width: 99%;
+    }
+
+    /*Sets up style for contact me title*/
+    h2.contactTitle{
+      text-align: center;
+      color: lightpink;
+      text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    }
+
+    h2.contactTitle:hover{
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: aliceblue;
+    }
+
+    /*Sets up style for contact me # and email title*/
+    h2.contact{
+      text-align: left;
+      color: lightpink;
+    }
