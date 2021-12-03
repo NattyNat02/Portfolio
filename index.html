@@ -1,159 +1,110 @@
 <!DOCTYPE html>
 <html lang="eng">
+    <head>
     <!-- this is my home page-->
     <title>VS' Portfolio</title>
-    <style>
-        /* this rule is to set the navigation bar*/
-        ul
-        {
-            list-style:none;
-            margin:0;
-            padding:0;
-            overflow: hidden;
-            background-color: aliceblue;
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
-        /*This rule defines the elements to align to left*/
-        li
-        {
-            float:left;
-            border-right: 1px solid #bbb;
-        }
+    <!--Sets up the style for the Navigation bar-->
+    <link href="style.css" rel="stylesheet">
 
-        /*This rule is to set the border in the mavigation bar*/
-        li:last-child
-        {
-            border-right:none;
-        }
-
-        /*to display hover color as blue and text color appear as white*/
-        li a:hover
-        {
-            color: white;
-            background-color: #3a60a7;
-        }
-
-        /*aligning the header 1 to center and setting the color to aquamarine */
-        h1
-        {
-            text-align:center;
-            text-transform: uppercase;
-            color: #008CBA;
-        }
-
-        /*setting the style for paragraph*/
-        p
-        {
-            text-indent: 50px;
-            letter-spacing: 1px;
-            text-align: justify;
-        }
-
-        /*Sets text in navigation bar in blocks */
-        li a
-        {
-               display:block;
-               text-align: center;
-               padding: 14px 14px;
-               text-decoration: none;
-        }
-
-        /* */
-        a{
-            text-decoration: none;
-            color: #008CBA;
-        }
-
-        /* this rule is to set the style for table in the webpage*/
-        table, td, th {
-            border: 2px solid black;
-        }
-
-        table{
-            border-collapse: collapse;
-            width: 100%;
-        }
-        td{
-            height: 50px;
-            vertical-align: bottom;
-        }
-
-        /*Sets the style for the search bar */
-        input[type=text]{
-            width:200px;
-            box-sizing: border-box;
-            border: 1px solid #008CBA;
-            border-radius: 4px;
-            font-size: 16px;
-            background-color: white;
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            padding:12px 20px 12px 40px;
-            transition: width 0.4s ease-in-out;
-        }
-
-        /*Expands search bar to 100% when there's input*/
-        input[type=text]:focus{
-            width:100%;
-        }
-
-    </style>
-    
-
-  <body>
+<body>
+    <!--This is my website header-->
+    <div class = "header">
+        <img src="Natalie Myers Professional Headshot.jpg" class="profilePicture" alt="Profile">
+        <h1 class="main"> Natalie Myers Portfolio </h2>
         <!--Navigation Bar-->
-        <ul>
-            <li><a class ="active" href="C:\Users\acese\OneDrive\Documents\GitHub\assignment_3-website-by-linking-all-your-web-pages-NattyNat02-main\1home.html">Home</a></li><li><a class ="active" href="C:\Users\acese\OneDrive\Documents\GitHub\assignment_3-website-by-linking-all-your-web-pages-NattyNat02-main\2experience.html">Experience</a></li><li><a class ="active" href="C:\Users\acese\OneDrive\Documents\GitHub\assignment_3-website-by-linking-all-your-web-pages-NattyNat02-main\3involvement.html">Involvements</a></li><li><a class ="active" href="C:\Users\acese\OneDrive\Documents\GitHub\assignment_3-website-by-linking-all-your-web-pages-NattyNat02-main\4interest.html">Interests</a></li><li style="float:right"><a class ="active" href="C:\Users\acese\OneDrive\Documents\GitHub\assignment_3-website-by-linking-all-your-web-pages-NattyNat02-main\5contact.html">Contact Me</a></li>
-        </ul>
+        <ul class="nav">
+            <li class="nav"><a class ="active" href="index.html">Home</a></li>
+            <li class="nav"><a class ="active" href="2ExperiencePage.html">Experience</a></li>
+            <li class="nav"><a class ="active" href="3InvolvementsPage.html">Involvements</a></li>
+            <li class="nav"><a class ="active" href="4ProjectsPage.html">Projects</a></li>
+            <li class= "nav" id="contact"><a class ="active" href="5ContactMe.html">Contact Me</a></li>
 
-        <!--Search Bar-->
+            <!--Search Bar-->
         <form>
-            <input style="float: right" type ="text" name="search" placeholder="Search....">
+            <input class ="search" type ="text" name="search" placeholder="Search....">
         </form>
+        </ul>
+    </div> 
 
-        <!--Website Header-->
+    <!--Page Title-->
+    <div>
+        <h1 class= "pageTitle">About Me</h1>
+    </div>
+
+    <!--Overall Description about Me-->
+    <div>
+    <article class="longColumn">
+        <h2 class = "longColumnTitle">Introduction</h2>
+        <p id="intro">Hi! My name is Natalie Myers. I am an Undergraduate student who plays softball at the University of the Incarnate Word. I am majoring in Management Information Systems and minoring in Computer Information Systems.</p>
+        
+        <!--Section About Education Background-->
+        <h2 class = "longColumnTitle">My Education</h2>
+        <a href="https://www.uiw.edu/"><img src="UIWlogo.png" alt="UIW Logo" class ="UIWlogo"></a>
         <div>
-            <h1>About Me</h1>
-            <p>This is a sample text to display on my webpage</p>
-        </div>
+        <b class="large">University of the Incarnate Word</b>
+        <p class = "education"><b class="small">Major: </b> Management Information Systems</p>
+        <p class = "education"><b class="small">Minor: </b> Computer Information Systems</p>
+        <p class = "education"><b class="small">Overall GPA: </b> 4.0</p>
+            </div>
 
-        <!--Table-->
-        <table>
-            <tr>
-                <th>Semester</th>
-                <th>Course Title</th>
-                <th>Course Code</th>
-                <th>Grade</th>
-            </tr>
+    </article>
 
-            <tr>
-                <td>Fall 2019</td>
-                <td>Spirituality and Prayer</td>
-                <td>RELS1335</td>
-                <td>A</td>
-            </tr>
+    <!--Summary about my work experience-->
+    <article class="longRow">
+        <p class = "homeRowText">My work experience originates at Idea Lab Kids corporate location. I was hired as a seasonal contractor to be a Cirriculumn Development Specialist for the summer of 2020. Most of my duties was for quality assurance on the company's lasson plans; however, other duties include creating and implementing the lesson plans into daily operations. My other work experiences are from my varying positions at the University of the Incarnate Word. My initial position was working as a teaching assisstant for the Programming 1 course. While in my position, I would sit in on classes and assist students in the formulation and execution of software written in the C# programming language. My current position is a research assistant within the University's Autonomous Vehicles Systems Lab. I perform groundbreaking research related to autonomous vehicles, artificial intelligence, and machine learning. More information regarding my educational and work experience can be found within the Expereince Page. </p>
+    </article>
 
-            <tr>
-                <td>Fall 2019</td>
-                <td>Introduction to Philosophy</td>
-                <td>PHIL1381</td>
-                <td>A</td>
-            </tr>
+    <!--Image connecting to Work Experience Page-->
+    <article class="shortRow">
+        <h2 class= "GifTitles">My Work Experience</h2>
+        <img class="homeGifs" src="Typing.gif" alt= typingGIF usemap="#workmap">
+        <map name="workmap">
+            <area shape="rect" coords="0,0,180,130" alt="experiencePage" href="2ExperiencePage.html">
+        </map>
+    </article>
 
-            <tr>
-                <td>Fall 2019</td>
-                <td>Principles of Accounting1</td>
-                <td>ACCT2311</td>
-                <td>A</td>
-            </tr>
-            
-            <tr>
-                <td>Fall 2019</td>
-                <td>Elementary Spanish 1</td>
-                <td>SPAN1311</td>
-                <td>A</td>
-            </tr>
-        </table>
+    <!--Summary about organizations I'm involved in-->
+    <article class="longRow">
+        <p class = "homeRowText">Outside of my engagements within the educational and employment endeavors, I am also involved in many organizations. Most notibly, I am a Division 1 athlete who plays softball for the University of the Incarnate Word and am a pitcher. I am also heavily involved in the Student Government Association as an athletic senator for softball. As a senator, I relay student difficulties to the faculty, vote and collaborate to resolve pressing issues, and inform students of important school news. Furthermore, I am also a leader for the UIW chapter of the Fellowship of Christain Athletes(FCA). As an FCA leader, I help conduct FCA meetings and events. Within these meetings, students and student-athletes alike gather in worship and build lifelong relationships. I am also a member of the UIW Business Club, the UIW chapter of the Information Audit and Control Association, and more which can be found within the Involvements Page. </p>
+    </article>
+    
+    <!--Image connecting to Involvements Page-->
+    <article class="shortRow">
+        <h2 class= "GifTitles">My Involvements</h2>
+        <img class="homeGifs" src="C:\Users\acese\OneDrive\Documents\GitHub\NatalieMyers-MidTermWebsite\Website Pages\uiwSoftballLogo.jpg" alt= uiwSoftballLogo usemap="#workmap2" height="163x" width="200px" style="margin: 8px 8px">
+        <map name="workmap2">
+            <area shape="rect" coords="0,0,180,130" alt="involvementsPage" href="3InvolvementsPage.html">
+        </map>
+    </article>
 
-    </body>
+    <!--Summary about my personal interests-->
+    <article class="longRow">
+        <p class = "homeRowText"> In addition to my career and educational involvements and achievements, I also try to ensure that I am living a balanced livestyle by allocating time to indulge into my personal interests and hobbies. One of my most notable general interests is computer technology; from artificial intelligence to virtual reality to quantum computing and much more, the endless capabilities for the application of technology entices me to learn more. Almost anything can be accomplished with technology, so I'd love to be able to make meaningful contributions with my passion. As for some of my hobbies, my most notable is videogames. Videogames are a wonderful blend of storytelling and technology to challenge both one's mind and one's skill. Furthermore, they help inspire me to create more and helps fuel my other hobby of casual programming. My other interests can be found within the Projects page. </p>
+    </article>
+
+    <!--Image connecting to Interests Page-->
+    <article class="shortRow">
+        <h2 class= "GifTitles">Projects</h2>
+        <img class="homeGifs" src="gaming.gif" alt= uiwSoftballLogo usemap="#workmap3" height="145px" width="200px" style="margin: 8px 8px">
+        <map name="workmap3">
+            <area shape="rect" coords="0,0,180,130" alt="interestsPage" href="4ProjectsPage.html">
+        </map>
+    </article>
+    </div>
+
+    <!--This is my website's footer-->
+    <section>
+        <footer>
+            <a href="https://www.linkedin.com/in/natalie-myers-2023?challengeId=AQESQotmAgTY7QAAAX02TkcQZh0c9ia_eqhChRhWNM0-AfRnKxnVp__mR7jVPlSxYOsQoxuDuYhmst74U1M-ms7p-9FlTYNELQ&submissionId=6d7d9bdd-e3d5-b816-ae6e-24b127635c11"><img src="C:\Users\acese\OneDrive\Documents\GitHub\NatalieMyers-MidTermWebsite\Website Pages\LinkedInLogo.jpg" class="footerLogo" alt="LinkedInLogo"></a>
+            <a href="https://www.instagram.com/nataliemyers021/"><img src="C:\Users\acese\OneDrive\Documents\GitHub\NatalieMyers-MidTermWebsite\Website Pages\instaLogo.jpg" class="footerLogo" alt="InstaLogo"></a>
+            <a href="5ContactMe.html"><img src="C:\Users\acese\OneDrive\Documents\GitHub\NatalieMyers-MidTermWebsite\Website Pages\emailLogo.png" class="footerLogo" id = "EmailLogo" alt="EmailLogo"></a>
+            <a href="C:\Users\acese\OneDrive\Documents\GitHub\NatalieMyers-MidTermWebsite\Website Pages\Natalie MyersResume.pdf"><img src="C:\Users\acese\OneDrive\Documents\GitHub\NatalieMyers-MidTermWebsite\Website Pages\Resume.jpg" class="footerLogo" id = "TeleLogo" alt="TeleLogo"></a>
+            <p class= "footerCenterText"><b>Natalie Myers Portfolio Website</b></p>
+        </footer>
+    </section>
+</body>
+
 </html>
